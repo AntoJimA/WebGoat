@@ -1,0 +1,12 @@
+name: WebGoat pipeline
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  devsecops:
+    uses: AntoJimA/devsecops-templates/.github/workflows/devsecops.yml@main
+    with:
+      java-version: "17"
