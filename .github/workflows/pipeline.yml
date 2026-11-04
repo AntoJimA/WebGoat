@@ -7,6 +7,6 @@ on:
 
 jobs:
   devsecops:
-    uses: AntoJimA/devsecops-template/github/workflows/devsecops.yml@main
+    uses: AntoJimA/devsecops-template/.github/workflows/devsecops.yml@main
     with:
       java-version: "17"
