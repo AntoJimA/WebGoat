@@ -5,8 +5,14 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write
+
+
 jobs:
   devsecops:
     uses: AntoJimA/devsecops-template/.github/workflows/devsecops.yml@main
     with:
       java-version: "25"
+      app-name: webgoat
